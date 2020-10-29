@@ -1,0 +1,94 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* colors background */
+.sky{
+    background-image: linear-gradient(to top, #0468dd, #007ce4, #008de7, #009ee7, #00ade5, #00b6e5, #0ebfe4, #2ac8e2, #2bcee3, #2fd4e4, #35d9e5, #3cdfe5);
+    height: 40%;
+}
+
+.ground{
+    background-image: linear-gradient(to bottom, #809c89, #8da690, #9ab197, #a8bb9e, #b7c5a5, #c0ccab, #cad4b0, #d4dbb6, #dbe1bb, #e2e7c0, #e9edc5, #f0f3ca);
+    height: 40%;
+    
+}
+
+.road{
+    height: 30%;
+    background: dimgrey;
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    width: 100%;
+}
+
+.line{
+    box-sizing: border-box;
+    border: 5px dashed #fff;
+    height: 0px;
+    width: 10000%;
+    position: absolute;
+    top: 90%;
+}
+
+/*positions*/
+h1{
+    margin: 0;
+    padding-top: 16%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    
+}
+
+#spongebob-house, #octo-house, #patrick-house, #krustyKrab{
+    position: absolute;
+}
+
+#krustyKrab{
+    top: 317px;
+    left: 15%;
+}
+
+#spongebob{
+    position: absolute;
+    top: 76%;
+    left: 0;
+    transition: linear 0.1s;
+}
+
+#spongebob-house{
+    left: 80%;
+    top: 42%;
+}
+
+#octo-house{
+    left: 72%;
+    top: 43%;
+}
+
+#patrick-house{
+    left: 64%;
+    top: 47%;
+}
+
+/* animation patrick */
+#patrick{
+    position: absolute;
+    animation: linear infinite;
+    animation-name: fly;
+    animation-duration: 7s;
+    
+}
+
+@keyframes fly{
+    0%{left:0;}
+    50%{left: 90%;}
+    100%{left:0;}
+}
